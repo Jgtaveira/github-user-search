@@ -1,15 +1,15 @@
 import React from 'react';
-import './styles.scss';
+import { Link } from 'react-router-dom';
+import './styles.css';
 
 const Navbar = () => (
-        <nav className="row nav-container" >
-            <div className="col-2 nav-logo-text" >
-                <h5>
-                    Bootcamp DevSuperior
-                </h5>
-            </div>
-        </nav>
-    )
+    <nav className="nav-main-menu">
+        <div className="nav-main-title">
+            <Link to="/" className="nav-logo-text">
+                <h4 className="nav-title">Bootcamp DevSuperior</h4>
+            </Link>
+        </div>
+    </nav>
+);
 
-
-    export default Navbar;
+export default Navbar;
